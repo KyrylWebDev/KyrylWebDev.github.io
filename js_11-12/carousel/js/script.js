@@ -7,7 +7,7 @@ $(function() {
 
     var currentCat = 1;
     var width = 400;
-    var animateSpeed = 1000;
+    var animateSpeed = 2000;
     var pause = 50;
 
     var minimumOffset = -1800;
@@ -16,7 +16,7 @@ $(function() {
 
     leftArr.click(function() {
         if (currentLeftValue < maximumOffset) {
-           caroList.animate({ 'margin-left': '+=' + width }, animateSpeed);
+           caroList.animate({ 'margin-left': '+=' + width }, animateSpeed)
        }
     });
 
@@ -36,4 +36,5 @@ $(function() {
                 }
             });
         console.log(currentCat);
-    }, pause);
+    }, pause)
+})
