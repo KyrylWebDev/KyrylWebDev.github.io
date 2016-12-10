@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/selectbox.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.js"></script>
+        <script src="js/selectbox.js"></script>
+        <script src="js/script.js"></script>
+
+        <script src="js/hoverIntent.js"></script>
+        <script src="js/superfish.js"></script>
+
+        <script type="text/javascript">
+		    jQuery(function(){
+			jQuery('ul.sf-menu').superfish();
+		    });
+		</script>
+
+        <title>HW 9-10</title>
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="menu">
+                <ul class="sf-menu">
+                    <li>
+                        <a href="#a">Races</a>
+                        <ul>
+                            <a href="#">Khadjeet</a>
+                                <ul>
+                                    <li>Alkhamar Torto</li>
+                                    <li>Ladjai Rullet</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Nord/a>
+                                <ul>
+                                    <li>Beletor Mork</li>
+                                    <li>Ulfric Stormbringer</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Dark Elve</a>
+                                <li>Simply the best</li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Skyrim for Elves</a>
+                    </li>
+                    <li>
+                        <a href="#">Classes</a>
+                        <ul>
+                            <li><a href="#">Warrior!</a></li>
+                            <li>
+                                <a href="#">Mage!</a>
+                                <ul>
+                                    <li>Fireball</li>
+                                    <li>Magic Guard</li>
+                                    <li>Athronah</li>
+                                    <li>Healing</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Bowman</a>
+                            </li>
+                            <li>
+                                <a href="#">DOVAKIN</a>
+                                <li style="color: red;">Holy shit he's gorgeous...</li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="jcarousel">
+                <ul>
+                    <li><img src="img/img-1.jpg" alt="fuck" /></li>
+                    <li><img src="img/img-2.jpg" alt="fuck" /></li>
+                    <li><img src="img/img-3.jpg" alt="fuck" /></li>
+                    <li><img src="img/img-4.jpg" alt="fuck" /></li>
+                    <li><img src="img/img-5.jpg" alt="fuck" /></li>
+                    <li><img src="img/img-6.jpg" alt="fuck" /></li>
+                </ul>
+            </div>
+
+            <a class="jcarousel-prev" href="#">prev</a>
+            <a class="jcarousel-next" href="#">next</a>
+
+        <select class="selectRace" >
+            <option value="option">select race...</option>
+            <option value="option">Human</option>
+            <option value="option">Argoniane</option>
+            <option value="option">Khadjeet</option>
+            <option>Dark Elv</option>
+            <option>Dvemer</option>
+            <option>Nord</option>
+            <option>Forest Elv</option>
+            <option>Redgard</option>
+        </select>
+
+        <form class="submit--all" action="" method="post">
+            <input type="button" id="submit" value="Confirm your destiny">
+        </form>
+
+
+        </div>
+
+    </body>
+</html>

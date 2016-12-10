@@ -1,0 +1,210 @@
+body {
+	background: #ccc;
+}
+
+.wrapper {
+	width: px(1550);
+	margin: 0 auto;
+	font-family: Montserrat-Regular, 'segoe ui';
+}
+
+header {
+	height: 110px;
+	background: #ff6633;
+}
+
+header nav img {
+	padding-left: 113px;
+	padding-top: 50px;
+}
+
+.first-img {
+	padding-left: 25px;
+}
+
+.second-img {
+	padding-left: 65px;
+}
+
+.third-img {
+	padding-left: 65px;
+}
+
+.fourth-img {
+	padding-left: 65px;
+}
+
+
+.logo-img {
+	margin-left: 15%;
+}
+
+.fifth-img {
+	margin-left: 230px;
+}
+
+.find-img {
+	margin-left: -70px;
+}
+ 
+.ava-img {
+	padding-left: 50px;
+	border: 0px solid #fff;
+	border-radius: 30px;
+}
+
+.menu {
+	height: 300px;
+	background: #ff6655;
+}
+
+.menu article {
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+	padding-top: 56px;
+	font-size: 35px;
+	letter-spacing: 2.5px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.menu nav {
+	display: block;
+	width: 510px;
+	margin-top: 30px;
+	margin: 0 auto;
+}
+
+.menu nav a {
+	width: 30px;
+	margin-left: 7px;
+	padding: 10px 48px 10px 48px;
+	font-size: 22px;
+	font-weight: bold;
+	color: #ddd;
+	text-decoration: none;
+	text-align: center;
+}
+
+.menu nav a:hover {
+	color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 50px;
+}
+
+.centre {
+	height: 680px;
+	background: #fff;
+}
+
+.comment {
+	position: relative;
+	height: 230px;
+	margin: 0 50px 0 50px;
+	border-bottom: 1px solid #ccc;
+}	
+
+.comment img {
+	margin-top: 44px;
+	margin-left: 35px;
+}
+		
+.round-pict {
+	border: 0px solid #fff;
+	border-radius: 30px;
+}
+
+.time {
+	position: absolute;
+	right: 120px;
+	top: 56px;
+	font-size: 20px;
+}
+
+.time::after {
+	content: "1:22pm";
+	color: #aaa;
+}
+
+.time-pict {
+	position: absolute;
+	right: 254px;
+	top: 14px;
+}
+
+.dude-name {
+	position: absolute;
+	top: 50px;
+	left: 114px;
+	font-size: 23px;
+	font-weight: bold;
+}
+
+.like-pict {
+	position: absolute;
+	top: 15px;
+	right: 54px;
+}
+
+.like-pict:after {
+	content: "12";
+	color: #ccc;
+}
+	
+.comment p {
+	width: 50%;
+  padding-left: 115px;
+	margin-top: 0;
+	font-size: 22px;
+}
+
+.load-back {
+	width: 100%;
+	background: #fff;
+	height: 150px;
+}
+
+.loading {
+	width: 200px;
+	margin: 0 auto;
+	background: #fff;
+	font-size: 20px;
+	color: #ccc;
+
+}
+
+.write-input {
+	position: relative;
+	width: 100%;
+	height: 180px;
+	margin-top: 100px;
+	background: #fff;
+	border-top: 1px solid #ccc;
+}
+
+.commentar {
+	float: right;
+	width: 80%;
+	padding-top: 30px;
+	border: 0;
+	color: #777;
+	font-size: 20px;
+}
+
+.attach-pict {
+	position: absolute;
+	z-index: 5;
+	top: 30px;
+	left: 33px;
+}
+
+.send-pict {
+	position: absolute;
+	z-index: 5;
+	top: 30px;
+	right: 23px;
+}

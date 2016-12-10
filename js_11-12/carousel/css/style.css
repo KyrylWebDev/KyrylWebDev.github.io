@@ -1,0 +1,73 @@
+.body {
+    background: #1bf;
+}
+
+.main-god {
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+    background: #ada;
+    color: #ffc;
+    border: 1px dashed #afa;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.carousel--list {
+    width: 10000px;
+    padding: 0;
+    position: relative;
+}
+
+.carousel--hider {
+    display: block;
+    margin: 50px auto;
+    margin-bottom: 200px;
+    width: 350px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.carousel--item {
+    display: block;
+    margin: 50px;
+    float: left;
+}
+
+.carousel--item img {
+    max-width: 300px;
+}
+
+.carousel-prev, .carousel-next {
+  display: block;
+  position: absolute;
+  top: 180px;
+  width: 60px;
+  height: 100px;
+  text-align: center;
+  padding-top: 50px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+  border-radius: 10px;
+  background: linear-gradient(45deg,  #f55,  #11a );
+  opacity: 0.3;
+  transition: opacity 1s, box-shadow 2s;
+}
+
+.carousel-prev {
+    left: 1px;
+}
+.carousel-prev:hover {
+    opacity: 1;
+    box-shadow: 2px 2px 15px 5px #fff;
+}
+
+.carousel-next {
+    right: 1px;
+}
+.carousel-next:hover {
+    opacity: 1;
+    box-shadow: 2px 2px 15px 5px #fff;
+}

@@ -1,0 +1,77 @@
+body {
+	background: url(../img/back.jpg) no-repeat;
+	background-size: cover;
+}
+
+.wrapper {
+	width: 960px;
+	height: 900px;
+	margin: auto;
+}
+
+header {
+	margin-bottom: 10px;
+	margin-top: 100px;
+	position: relative;
+	z-index: 2;
+}
+.palm {
+	padding-left: 200px;
+	padding-top: 20px;
+	width: 130px;
+	position: absolute;
+	top: -95px;
+    left: -8px;
+    z-index: 1;
+}
+
+.logo {
+	padding-left: 30px;
+	z-index: 2;
+}
+
+.travel {
+	padding-left: 90px;
+	color: white;
+	font-size: 0.9em;
+}
+
+.contacts {
+	color: white;
+	position: absolute;
+	top: 10px;
+    right: 45px;
+    font-size: 0.9em;
+}
+.us {
+	margin-bottom: 5px;
+	font-size: 1.1em;
+}
+
+
+.country {
+	float: left;
+	margin-left: 20px;
+	width: 30%;
+	padding: 10px 0 10px 10px;
+}
+
+.country:nth-child(5),
+.country:nth-child(6),
+.country:nth-child(7) {
+
+	margin-top: 50px;
+}
+
+
+
+footer {
+	clear: both;
+	color: white;
+	padding-top: 200px;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+
+
