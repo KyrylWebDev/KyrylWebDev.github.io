@@ -38,5 +38,3 @@ var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"
 var currentDate = weekDays[today.getDay()];
 
 $('.todo__today').html(currentDate);
-
-});
