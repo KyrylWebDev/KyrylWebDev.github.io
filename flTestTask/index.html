@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>testTask-calc</title>
+    </head>
+    <body>
+        <div class="top">
+            <nav class="top__menu">
+                <li><a href="#">О Нас</a></li>
+                <li><a href="#">Ипотека</a></li>
+                <li><a href="#">Реструктуризация</a></li>
+                <li><a href="#">Потребительский кредит</a></li>
+
+                <li><a href="#"><img class="top__logo" src="img/top-logo.png" alt=""></a></li>
+
+                <li><a href="#">Банкротство</a></li>
+                <li><a href="#">Списание долгов</a></li>
+                <li><a href="#">Возврат налогов</a></li>
+                <li><a href="#">Контакты</a></li>
+            </nav>
+            <img class="slide-img" src="img/slide.jpg" alt="">
+        </div>
+        <h1>КАЛЬКУЛЯТОР ВАШЕЙ ВЫГОДЫ*</h1>
+        <ul class="colors">
+            <li style="background: #0e0"></li>
+            <li style="background: #57f"></li>
+            <li style="background: #00f"></li>
+            <li style="background: #90a"></li>
+        </ul>
+        <ul class="under-colors">
+            <li>Перерасчет ипотеки</li>
+            <li>Расчет новой ипотеки</li>
+            <li>Возврат налога</li>
+            <li>Потребительский кредит</li>
+        </ul>
+
+        <section class="calc-block">
+            <h1>Пример расчета ипотеки</h1>
+            <h4>Калькулятор перерасчета разработан ведущими юристами и финансистами на основе  доскональных знаний законодательства и банковских систем.</h4>
+            <p>Допустим, гражданин России в августе 2013 года взял ипотеку в Банке на сумму 3 000 000 р под 15% годовых, срок выплаты - 20 лет.</p>
+
+            <table rules="all">
+            <tbody>
+                <tr>
+                    <th bgcolor="#ddd"><a href="#">Перерасчет ипотеки</a></th>
+                    <th bgcolor="#ddd"><a href="#">Расчет новой ипотеки</a></th>
+                    <th bgcolor="#ddd"><a href="#">Возврат налога</a></th>
+                    <th bgcolor="#ddd"><a href="#">Потребительский кредит</a></th>
+                    <th bgcolor="#ddd"><a href="#">Перерасчет потребительского кредита</a></th>
+                </tr>
+            </tbody>
+            <div id="economy">Ваша экономия:
+                <p id="month">Ежемясячно: </p>
+                <input type="text" name="" value=""><span> р.</span><br><br>
+                <p>Всего: </p>
+                <input type="text" name="" value=""><span> р.</span>
+            </div>
+            </table>
+            <div class="table-inner">
+                Сумма: <input type="text" name="" value=""> р.
+                Срок (мес): <input type="text" name="" value="">
+                <p> Ставка: <input type="text" name="" value=""> % </p>
+                <span>Дата: <input type="text" name="" value=""> мес. <input type="text" name="" value=""> Год</span>
+                <hr width="560px" style="margin-left: -25px; margin-top: 20px; margin-bottom: 20px;">
+                    <h3 style="text-align: center; font-size: 22px; font-family: Ubuntu; padding-bottom: 10px;">Ваш ежемесячный платеж = <span style="text-decoration: underline;">ХХ ХХХр</span></h3>
+                <tr>
+                    <h3>Наши или желаемые условия:</h3>
+                    <h5>Ежемесячный платеж:</h5><br>
+                    <input type="text" name="" value="">
+                    <h5>Срок ипотеки:</h5><br>
+                    <input type="text" name="" value="">
+                </tr>
+                <hr width="560px" style="margin-left: -25px; margin-top: 20px; margin-bottom: 20px;">
+                <span>Имя</span><input style="margin-left: 100px; width: 300px;" type="text" id="name" value=""><br><br>
+                <span>Телефон</span><input style="margin-left: 71px; width: 300px;" type="text" id="phone" value=""><br><br>
+                <span>E-mail</span><input style="margin-left: 85px; width: 300px;" type="email" id="email" value=""><br>
+                <input type="button" id="calculateData" value="Пересчитать"></button>
+            </div>
+                <div class="table-inner-2 titles">
+                    <br><br>
+                    <br><br><br>
+                    <span>Всего к выплате</span><br><br>
+                    <span>Услуги банка</span><br><br>
+                    <span>Кол-во месяцев</span><br><br><br>
+                    <span>Выплачено</span><br><br>
+                    <span>Остаток за жилье</span><br><br>
+                    <span>Остаток за банк. услуги</span><br><br>
+                </div>
+                <div class="table-inner-2 currVals">
+                    <h5>Ваши текущие условия: </h5>
+                    <input type="text" id="firstVal" value="xxxxxx"><br>
+                    <input type="text" name="" value="xxxxxx"><br>
+                    <input type="text" name="" value="xxxxxx"><br>
+                    <input type="text" name="" value="xxxxxx"><br>
+                    <input type="text" name="" value="xxxxxx"><br>
+                    <input type="text" name="" value="xxxxxx"><br>
+                </div>
+                <div class="table-inner-2 offerVals">
+                    <h5>Наше предложение: </h5>
+                    <input type="text" id="firstVal" name="" value="xxxxxx"><br>
+                    <input type="text" name="" value="xxxxxx"><br>
+                    <input type="text" name="" value="xxxxxx"><br>
+                </div>
+
+        </section>
+
+    </body>
+</html>
