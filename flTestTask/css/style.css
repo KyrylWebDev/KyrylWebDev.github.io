@@ -88,7 +88,7 @@ h1 {
     margin: 30px 3px 10px 3px;
     padding-left: 10px;
     padding-right: 10px;
-    background: linear-gradient(to bottom, #ddd, 30% #ccc 50%, #aaa 90%);
+    background: linear-gradient(70deg, #eca, #acf, #aeb); 
 }
 
 .calc-block h1 {
