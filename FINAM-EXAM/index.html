@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/build/style.css">
+        <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
         <title>FINAL EXAM</title>
     </head>
     <body>
@@ -14,7 +15,7 @@
                     <a class="first-link" href="#">Log in</a>
                     <a href="#">Sign up</a>
                 </nav>
-                <h3 class="site-name">Urlaubsglück</h4>
+                <h3 class="site-name"><a href="#">Urlaubsglück</a></h4>
                 <h1 class="slogan">Share your holiday dreams</h1>
                 <p class="under-slogan">And find the perfect partner to fullfill it</p>
                 <input type="button" class="find-butt" value="Find your holiday partner">
@@ -43,22 +44,22 @@
             <!-- THIRD PAGE ----------->
             <section class="page-3">
                 <h1>Meet a partner for your best holiday </h1>
-                <article class="partner-block">
+                <article class="partner-block  partner-left">
                     <img src="img/page3-1.jpg" alt="">
                     <h3>Bradley Hunter</h3>
                     <p>Based in Chicago. I love playing tennis and loud music</p>
                 </article>
-                <article class="partner-block">
+                <article class="partner-block partner-right">
                     <img src="img/page3-2.jpg" alt="">
                     <h3>Lucas Marsha</h3>
-                    <p>I get my inspiration form nature and objects around me. I have a passion to colors, typography and skateboards.</p>
+                    <p>I get my inspiration form nature and objects around me.</p>
                 </article>
-                <article class="partner-block">
+                <article class="partner-block  partner-left">
                     <img src="img/page3-3.jpg" alt="">
                     <h3>Heather Walker</h3>
                     <p>I am a happy cake. Eat me and you will be also happy. Oh yeah.</p>
                 </article>
-                <article class="partner-block">
+                <article class="partner-block partner-right">
                     <img src="img/page3-4.jpg" alt="">
                     <h3>Bradley Hunter</h3>
                     <p>Based in Chicago. I love playing tennis and loud music. wtf i am a girl or what...</p>
@@ -68,52 +69,55 @@
         <!-- FOURTH PAGE ----------->
             <section class="page-4">
                 <h1>Discover holiday activity ideas</h1>
-                <article class="activity">
-                    <div class="pict-shadow">
+                <div class="grid">
+                <article class="activity grid-item item-width-1">
+                    <div class="pict-shadow grid-item item-width-1">
                         <h2>Sport and Activity</h2>
                     </div>
                 </article>
-                <article class="activity activ2">
-                    <div class="pict-shadow">
+                <article class="activity activ2 grid-item item-width-1">
+                    <div class="pict-shadow grid-item item-width-1">
                         <h2>Wellnes and Health</h2>
                     </div>
                 </article>
-                <article class="activity activ3">
-                    <div class="pict-shadow">
+                <article class="activity activ3 grid-item item-width-1">
+                    <div class="pict-shadow grid-item item-width-1">
                         <h2>Extreme Sports and Expeditions</h2>
                     </div>
                 </article>
-                <article class="activity activ4">
-                    <div class="pict-shadow">
+                <article class="activity activ4 grid-item item-width-1">
+                    <div class="pict-shadow grid-item item-width-1">
                         <h2>Games</h2>
                     </div>
                 </article>
-                <article class="activity activ5">
-                    <div class="pict-shadow">
+                <article class="activity activ5 grid-item item-width-2">
+                    <div class="pict-shadow grid-item item-width-2">
                         <h2>Culture and Education</h2>
                     </div>
                 </article>
-                <article class="activity activ6">
-                    <div class="pict-shadow">
+                <article class="activity activ6 grid-item item-width-2">
+                    <div class="pict-shadow grid-item item-width-2">
                         <h2>Relaxation</h2>
                     </div>
                 </article>
-                <article class="activity activ7">
-                    <div class="pict-shadow">
+                <article class="activity activ7 grid-item item-width-1">
+                    <div class="pict-shadow grid-item item-width-1">
                         <h2>Travelling</h2>
                     </div>
                 </article>
             </section>
+
+            <!-- FIFTH PAGE ----------->
             <section class="page-5">
                 <h1>Discover holiday activity ideas</h1>
                 <p>Hi! What are your holiday interests?</p>
                 <input type="text" id="findInterests" placeholder="Enter your interests">
-                <input type="button" class="find-butt" value="Search partners">
+                <input type="button" class="find-butt find-interests" value="Search partners">
                 <div id="searchResults">
 
                 </div>
             </section>
-            
+
             <footer>
                 <h1 class="footer-title">Urlaubsglück</h1>
                 <h3>Company</h3>

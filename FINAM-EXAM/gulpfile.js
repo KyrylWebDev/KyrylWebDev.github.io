@@ -22,5 +22,5 @@ gulp.task('js', function() {
 })
 
 gulp.task('watch', function() {
-    gulp.watch('css/style.sass', ['sass']);
+    gulp.watch('css/*.sass', ['sass']);
 });

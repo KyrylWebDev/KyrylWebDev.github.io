@@ -53,6 +53,9 @@ body
     color: #fff
     font-size: 20px
     text-transform: uppercase
+    a
+        text-decoration: none
+        color: #fff
 
 .slogan
     display: block
@@ -138,8 +141,7 @@ body
         color: #ccc
         font-size: 14px
         text-transform: none
-        font-family: Roboto
-        font-weight: lighter
+        font-family: "Roboto-Light"
 
 .step2
     background: url("../../img/sect2-2.png") no-repeat
@@ -172,6 +174,7 @@ body
         display: block
         width: 250px
         margin: auto
+        color: #888
         font-size: 14px
         font-family: "Roboto-Light"
         text-align: center
@@ -205,31 +208,42 @@ body
     h1
         +headers
 
+.grid-item
+    width: 300px
+
+
 .activity
     position: relative
     width: 300px
     height: 120px
     margin: 15px auto
     background: url("../../img/page4-1.jpg") no-repeat center
+    background-size: cover
     border-radius: 7px
 
 .activ2
     background: url("../../img/page4-2.jpg") no-repeat center
+    background-size: cover
 
 .activ3
     background: url("../../img/page4-3.jpg") no-repeat center
+    background-size: cover
 
 .activ4
     background: url("../../img/page4-4.jpg") no-repeat center
+    background-size: cover
 
 .activ5
     background: url("../../img/page4-5.jpg") no-repeat center
+    background-size: cover
 
 .activ6
     background: url("../../img/page4-6.jpg") no-repeat center
+    background-size: cover
 
 .activ7
     background: url("../../img/page4-7.jpg") no-repeat center
+    background-size: cover
 
 
 .pict-shadow
@@ -264,6 +278,7 @@ body
         font-size: 18px
         font-family: "Roboto-Light"
         color: #444
+    clear: both
 
 #findInterests
     display: block
@@ -282,6 +297,7 @@ body
         outline: none
 
 #searchResults
+    clear: both
     height: 50px
     border-bottom: 5px solid #f55
 
@@ -328,3 +344,7 @@ footer
     font-family: Montserrat
     font-weight: bold
     text-transform: uppercase
+
+
+/* IMPORTS */
+@import portrait-media
