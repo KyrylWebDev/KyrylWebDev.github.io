@@ -1,7 +1,3 @@
-define (
-    'controller',
-    ['model', 'view'],
-    function() {
         function Controller(model, view) {
             var self = this;
 
@@ -41,8 +37,3 @@ define (
                 view.renderList(model.data);
             };
         }
-        return Controller;
-    };
-
-
-);

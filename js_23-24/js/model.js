@@ -1,9 +1,5 @@
-define (
-    'model',
-    [ ],
-    function() {
         function Model(data) {
-            let self = this;
+            var self = this;
             self.data = data;
 
             self.addItem = function (item) {
@@ -13,19 +9,16 @@ define (
             };
 
             self.removeItem = function(item) {
-                let index = self.data.indexOf(item);
+                var index = self.data.indexOf(item);
                 if (index === -1) return;
                 self.data.splice(index, 1);
                 return self.data;
             };
 
             self.editItem = function(item, newItem) {
-                let index = self.data.indexOf(item);
+                var index = self.data.indexOf(item);
                 if (index === -1) return;
                 self.data[index] = newItem;
                 return self.data;
             };
         };
-        return Model;
-    }
-);

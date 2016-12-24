@@ -1,13 +1,68 @@
 @import reset
-$border-clr:    #b59
-$bg-color:      #ff9
+$prime-clr:    #ffc
 
+body
+    background: url("../../img/bg.jpg")
+    background-size: cover
 
 .todo
-    width: 400px
+    position: relative
+    width: 350px
     height: 400px
-    margin: 50px auto
+    margin: 100px auto
     padding: 10px
-    background: $bg-color
-    border: 5px solid $border-clr
+    border: 5px solid $prime-clr
     border-radius: 30px
+    font-family: "Segoe Script"
+
+.todo__today
+    padding-top: 20px
+    font-size: 1.8em
+    border-bottom: 3px solid $prime-clr
+    text-align: center
+    color: $prime-clr
+    font-weight: lighter
+
+.todo__item-list
+    width: 300px
+    margin-top: 20%
+    padding-left: 20px
+    overflow: hidden
+    li
+        height: 40px
+        position: relative
+    .edit
+        width: 250px
+        height: 25px
+        background-color: rgba($prime-clr, 0.5)
+        text-indent: 10px
+        color: #fff
+        font-size: 1.1em
+
+.todo__item--delete img
+    position: absolute
+    width: 30px
+    height: 30px
+
+.todo__controlls
+    width: 300px
+    position: absolute
+    left: 30px
+    bottom: 10px
+
+.todo__controlls__input
+    width: 220px
+    height: 30px
+    text-indent: 10px
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 15px
+
+.todo__controlls__butt
+    width: 60px
+    height: 34px
+    margin-left: -7px
+    background-color: rgba($prime-clr, 0.5)
+    cursor: pointer
+    color: #fff
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 15px

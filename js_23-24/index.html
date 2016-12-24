@@ -3,30 +3,38 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/build/main.css">
-        <script src="js/libs/require.js" data-main="js/app"></script>
+        <script async src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script async src="js/libs/tmpl.js"></script>
         <title>TODOList</title>
     </head>
     <body>
 
-    <script type="text/template" id="wrapper-template">
         <div class="main">
             <div class="todo">
                 <h1 class="todo__today"></h1>
                 <ul class="todo__item-list">
                 </ul>
                 <div class="todo__controlls">
-                    <input type="text" class="todo__controlls__input" placeholder="Enter new task">
-                    <input type="button" class="todo__controlls__butt" value="Add">
+                    <input type="text" class="todo__controlls__input" placeholder="What you gonna do?!">
+                    <input type="button" class="todo__controlls__butt" value="DO IT!">
                 </div>
             </div>
         </div>
-    </script>
 
-    <script type="text/template" id="list-template">
-        <% for (let i = 0; i < data.length; i++) { %>
-            <li class="todo__item"><%= data[i] %><span class="todo__item--delete">X</span><span class="todo__item--edit">edit</span></li>
-        <% }; %>
-    </script>
+        <script type="text-template" id="list-template">
+            <% for (let i = 0; i < data.length; i++) { %>
+                <li>
+                    <input type="text" class="edit" value="<%= data[i] %>">
+                    <a href="#" class="todo__item--delete delete" data-value="<%= data[i] %>"><img src="img/del-icon.png"></a>
+                </li>
+            <% }; %>
+        </script>
+
+
+        <script src="js/model.js"></script>
+        <script src="js/view.js"></script>
+        <script src="js/controller.js"></script>
+        <script src="js/app.js"></script>
 
     </body>
 </html>

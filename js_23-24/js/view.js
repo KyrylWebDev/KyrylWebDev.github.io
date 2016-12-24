@@ -1,28 +1,18 @@
-define (
-    'view',
-    [ 'jquery', 'model'],
-    function() {
         function View(model) {
-            let self = this;
+            var self = this;
 
-            self.init = function () {
-                var main = tmpl($('#wrapper-template').html());
-
-                var $('body').append(main);
+            function init() {
                 self.elements = {
                     input: $('.todo__controlls__input'),
                     addButt: $('.todo__controlls__butt'),
-                    listCont: $('.item-list')
+                    listCont: $('.todo__item-list')
                 };
                 self.renderList(model.data);
             };
 
             self.renderList = function (data) {
-                let list = tmpl($('#list-template').html(), {data: data});
-                self.elements.listContainer.html(list);
+                var list = tmpl($('#list-template').html(), {data: data});
+                self.elements.listCont.html(list);
             };
             init();
         };
-        return View;
-    };
-);
