@@ -105,8 +105,9 @@ body
 .steps
     width: 300px
     height: 250px
-    margin: auto
-    background: url("../../img/sect2-1.png") no-repeat
+    margin: 13px auto
+    background: url("../../img/sect2-1.png") no-repeat center
+    border-radius: 5px
     h5
         display: block
         float: left
@@ -138,16 +139,16 @@ body
     .small-text
         width: 265px
         height: 45px
-        color: #ccc
+        color: #fff
         font-size: 14px
         text-transform: none
         font-family: "Roboto-Light"
 
 .step2
-    background: url("../../img/sect2-2.png") no-repeat
+    background: url("../../img/sect2-2.png") no-repeat  center
 
 .step3
-    background: url("../../img/sect2-3.png") no-repeat
+    background: url("../../img/sect2-3.png") no-repeat center
 
 
 /*----------------- THIRD PAGE-------------------- */
@@ -194,7 +195,8 @@ body
     cursor: pointer
 
 #findPartners:hover
-    background: #ccc
+    color: #fff
+    background: #f66
     transition: .5s
 
 #findPartners:focus
@@ -210,7 +212,6 @@ body
 
 .grid-item
     width: 300px
-
 
 .activity
     position: relative
@@ -282,7 +283,7 @@ body
 
 #findInterests
     display: block
-    width: 280px
+    width: 240px
     height: 40px
     line-height: 40px
     margin: 20px auto
@@ -292,7 +293,6 @@ body
     color: #999
     font-size: 14px
     font-family: Roboto
-
     &:focus
         outline: none
 
@@ -304,6 +304,7 @@ body
 
 /*------------FOOTER SECTION---------*/
 footer
+    height: 196px
     .footer-title
         margin-top: 20px
         font-size: 16px
@@ -348,3 +349,4 @@ footer
 
 /* IMPORTS */
 @import portrait-media
+@import desktop-media
