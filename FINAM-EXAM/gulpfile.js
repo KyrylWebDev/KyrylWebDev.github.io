@@ -6,7 +6,7 @@ const watch = require('gulp-watch');
 
 
 gulp.task('sass', function() {
-    return gulp.src('css/style.sass')
+    return gulp.src('css/*.sass')
         .pipe(debug({title: 'src'}))
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(gulp.dest('css/build'))
