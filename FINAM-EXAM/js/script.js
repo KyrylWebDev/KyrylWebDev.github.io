@@ -16,9 +16,8 @@ window.onload = function() {
                         let activities = $('.activity');
                         for(let i in data.results) {
                             console.log(data);
-                            activities.css('backgroundImage', 'url(' + data.results[i].itemurl +')');
-                            activTitle.html(data.results[i].title);
-                            activTitle.css('textTransform', 'uppercase');
+                            $('.page-4').append('<img class="activity grid-item item-width-1" src='+data.results[i].itemurl+' />');
+                            $('.grid').hide(1500);
                         };
                 }
             });
