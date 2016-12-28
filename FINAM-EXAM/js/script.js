@@ -37,4 +37,13 @@ window.onload = function() {
     });
     $(".find-butt").bind("click", searchPictures());
 
+
+    $('.main-carousel').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      autoPlay: 1500,
+      pauseAutoPlayOnHover: true,
+      Parallax: true
+    });
 }
