@@ -9,7 +9,7 @@ $(function () {
        }
     });
 
-    $("#search--button").bind("click", function() {
+    $("#search--button").bind("click", function SearchFunc() {
 
         var searchVal = $(".search--input").val();
         console.log(searchVal);

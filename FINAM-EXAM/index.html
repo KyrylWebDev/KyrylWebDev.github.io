@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="shortcut icon" href="img/title-icon.png" >
+        <!-- <meta name="viewport" content="width=device-width; initial-scale=1.0"> -->
         <link rel="stylesheet" href="css/build/style.css">
         <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script async src="js/script.js" type="text/javascript" ></script>
         <title>FINAL EXAM</title>
     </head>
     <body>
@@ -48,23 +51,35 @@
             <section class="page-3">
                 <h1>Meet a partner for your best holiday </h1>
                 <section class="all-partners">
-                    <article class="partner-block  partner-left">
-                        <img src="img/page3-1.jpg" alt="">
+                    <article class="partner-block  partner-left partner1">
+                        <div class="partner-images">
+                            <img src="img/page3-1.jpg" alt="">
+                            <img id="icon-tv" src="img/icons/tv.png" alt="">
+                        </div>
                         <h3>Bradley Hunter</h3>
                         <p>Based in Chicago. I love playing tennis and loud music</p>
                     </article>
-                    <article class="partner-block partner-right">
-                        <img src="img/page3-2.jpg" alt="">
+                    <article class="partner-block partner-right partner2">
+                        <div class="partner-images">
+                            <img src="img/page3-2.jpg" alt="">
+                            <img id="icon-tv" src="img/icons/cup.png" alt="">
+                        </div>
                         <h3>Lucas Marsha</h3>
                         <p>I get my inspiration form nature and objects around me.</p>
                     </article>
-                    <article class="partner-block  partner-left">
-                        <img src="img/page3-3.jpg" alt="">
+                    <article class="partner-block  partner-left partner3">
+                        <div class="partner-images">
+                            <img src="img/page3-3.jpg" alt="">
+                            <img id="icon-tv" src="img/icons/lab.png" alt="">
+                        </div>
                         <h3>Heather Walker</h3>
                         <p>I am a happy cake. Eat me and you will be also happy. Oh yeah.</p>
                     </article>
-                    <article class="partner-block partner-right">
-                        <img src="img/page3-4.jpg" alt="">
+                    <article class="partner-block partner-right partner4">
+                        <div class="partner-images">
+                            <img src="img/page3-4.jpg" alt="">
+                            <img id="icon-tv" src="img/icons/send.png" alt="">
+                        </div>
                         <h3>Bradley Hunter</h3>
                         <p>Based in Chicago. I love playing tennis and loud music. </p>
                     </article>
@@ -76,39 +91,39 @@
             <section class="page-4">
                 <h1>Discover holiday activity ideas</h1>
                 <div class="grid">
-                    <article class="activity grid-item item-width-1">
+                    <article class="activity activ1 grid-item item-width-1">
                         <div class="pict-shadow grid-item item-width-1">
-                            <h2>Sport and Activity</h2>
+                            <h2 class="activity-title">Sport and Activity</h2>
                         </div>
                     </article>
                     <article class="activity activ2 grid-item item-width-1">
                         <div class="pict-shadow grid-item item-width-1">
-                            <h2>Wellnes and Health</h2>
+                            <h2 class="activity-title">Wellnes and Health</h2>
                         </div>
                     </article>
                     <article class="activity activ3 grid-item item-width-1">
                         <div class="pict-shadow grid-item item-width-1">
-                            <h2>Extreme Sports and Expeditions</h2>
+                            <h2 class="activity-title">Extreme Sports and Expeditions</h2>
                         </div>
                     </article>
                     <article class="activity activ4 grid-item item-width-1">
                         <div class="pict-shadow grid-item item-width-1">
-                            <h2>Games</h2>
+                            <h2 class="activity-title">Games</h2>
                         </div>
                     </article>
                     <article class="activity activ5 grid-item item-width-2">
                         <div class="pict-shadow grid-item item-width-2">
-                            <h2>Culture and Education</h2>
+                            <h2 class="activity-title">Culture and Education</h2>
                         </div>
                     </article>
                     <article class="activity activ6 grid-item item-width-2">
                         <div class="pict-shadow grid-item item-width-2">
-                            <h2>Relaxation</h2>
+                            <h2 class="activity-title">Relaxation</h2>
                         </div>
                     </article>
                     <article class="activity activ7 grid-item item-width-1">
                         <div class="pict-shadow grid-item item-width-1">
-                            <h2>Travelling</h2>
+                            <h2 class="activity-title">Travelling</h2>
                         </div>
                     </article>
                 </div>
@@ -119,7 +134,7 @@
                 <h1>Discover holiday activity ideas</h1>
                 <p>Hi! What are your holiday interests?</p>
                 <div class="search-interests">
-                    <input type="text" id="findInterests" placeholder="Enter your interests">
+                    <input type="text" id="findInterests"  placeholder="Enter your interests">
                     <input type="button" class="find-butt find-interests" value="Search partners">
                 </div>
             </section>
