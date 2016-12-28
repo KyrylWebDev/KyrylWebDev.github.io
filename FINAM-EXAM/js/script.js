@@ -14,15 +14,17 @@ window.onload = function() {
                 dataType: "json",
                 success: function (data) {
                         let activities = $('.activity');
-                        $.each(data.results, function (i, val) {
+                        for(let i in data.results) {
                             console.log(data);
-                            activities.css('backgroundImage', 'url(' + val.itemurl +')');
-                            activTitle.html(val.title);
+                            activities.css('backgroundImage', 'url(' + data.results[i].itemurl +')');
+                            activTitle.html(data.results[i].title);
                             activTitle.css('textTransform', 'uppercase');
-                        });
+                        };
                 }
             });
     }
+
+    searchPictures();
 
     searchInput.addEventListener('keydown', function (e) {
        if (e.keyCode == 13) {
@@ -35,7 +37,7 @@ window.onload = function() {
         this.style.backgroundColor = "#3a3";
         this.style.transition = "1s";
     });
-    $(".find-butt").bind("click", searchPictures());
+    $(".find-butt").bind("click", searchPictures);
 
 
     $('.main-carousel').flickity({
@@ -43,7 +45,6 @@ window.onload = function() {
       cellAlign: 'left',
       contain: true,
       autoPlay: 1500,
-      pauseAutoPlayOnHover: true,
-      Parallax: true
+      pauseAutoPlayOnHover: true
     });
 }
