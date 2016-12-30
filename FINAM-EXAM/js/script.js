@@ -40,8 +40,7 @@ window.onload = function() {
     });
 
     $(".find-butt").bind("click", function() {
-        this.style.backgroundColor = "#3a3";
-        this.style.transition = "1s";
+        $(this).toggleClass('green-back');
     });
     $(".find-butt").bind("click", searchPictures);
 
