@@ -15,6 +15,7 @@ window.onload = function() {
                 success: function (data) {
                         let activities = $('.activity');
                         var count = 0;
+                        $('.page-4 img').remove();
                         for(let i in data.results) {
                             if (count === 6) {
                                 break;
