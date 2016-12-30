@@ -14,16 +14,16 @@ window.onload = function() {
                 dataType: "json",
                 success: function (data) {
                         let activities = $('.activity');
+                        var count = 0;
                         for(let i in data.results) {
-                            var count = 0;
-                            count++;
+                            if (count === 6) {
+                                break;
+                            }
                             console.log(data);
                             console.log(count);
                             $('.page-4').append('<img class="activity grid-item item-width-1" src='+data.results[i].itemurl+' />');
                             $('.grid').hide(1500);
-                            if (count === 7) {
-                                break;
-                            }
+                            count++;
                         };
                 }
             });
