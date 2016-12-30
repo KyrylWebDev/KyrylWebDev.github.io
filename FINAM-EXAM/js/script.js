@@ -15,9 +15,15 @@ window.onload = function() {
                 success: function (data) {
                         let activities = $('.activity');
                         for(let i in data.results) {
+                            var count = 0;
+                            count++;
                             console.log(data);
+                            console.log(count);
                             $('.page-4').append('<img class="activity grid-item item-width-1" src='+data.results[i].itemurl+' />');
                             $('.grid').hide(1500);
+                            if (count === 7) {
+                                break;
+                            }
                         };
                 }
             });
