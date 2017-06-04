@@ -1,6 +1,6 @@
 .main {
     width: 500px;
-    height: 300px;
+    height: 450px;
     margin: auto;
     margin-top: 20px;
     border: 3px solid #000;
@@ -39,6 +39,28 @@
     border-radius: 20px;
 }
 
+#input-4 {
+    margin-top: 15px;
+    margin-left: 111px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#input-5 {
+    margin-left: 70px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.inputs:focus {
+    outline: none;
+    padding-left: 10px;
+}
+
+label {
+    margin-left: 70px;
+}
+
 #advice-1 {
     display: none;
     width: 150px;
@@ -46,7 +68,7 @@
     position: absolute;
     right: 5px;
     top: -10px;
-    box-shadow: 0px 0px 10px #88f;
+    text-shadow: 0px 0px 10px #88f;
     text-align: center;
 }
 
@@ -57,7 +79,7 @@
     position: absolute;
     right: 5px;
     top: 30px;
-    box-shadow: 0px 0px 10px #88f;
+    text-shadow: 0px 0px 10px #88f;
     text-align: center;
 }
 
@@ -68,7 +90,7 @@
     position: absolute;
     right: 5px;
     top: 80px;
-    box-shadow: 0px 0px 10px #88f;
+    text-shadow: 0px 0px 10px #88f;
     text-align: center;
 }
 

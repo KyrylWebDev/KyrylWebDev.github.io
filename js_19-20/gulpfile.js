@@ -1,20 +1,19 @@
-'use strict'
 
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const debug = require('gulp-debug');
-const concat = require('gulp-concat');
-const uglify = require('gulp-uglifyjs');
-const watch = require('gulp-watch');
-const spritesmith = require('gulp.spritesmith');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var debug = require('gulp-debug');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglifyjs');
+var watch = require('gulp-watch');
+var spritesmith = require('gulp.spritesmith');
 
 gulp.task('sass', function() {
     return gulp.src('css/*.scss')
         .pipe(debug({title: 'src'}))
-        .pipe(sass({ outputStyle: 'compressed' }))
+        .pipe(sass({ outputStyle: 'nested' }))
         .pipe(gulp.dest('css/build'))
         .pipe(debug({title: 'dest'}));
-})
+});
 
 gulp.task('js', function() {
     return gulp.src('js/*.js')
@@ -22,7 +21,7 @@ gulp.task('js', function() {
         .pipe(uglify('production.min.js'))
         .pipe(gulp.dest('js/build'))
         .pipe(debug({ title: 'dest' }))
-})
+});
 
 gulp.task('sprite', function () {
   var spriteData = gulp.src('img/sprite/*.png').pipe(spritesmith({
@@ -39,12 +38,6 @@ gulp.task('watch', function() {
         .pipe(sass({ outputStyle: 'compressed' }))
         .pipe(gulp.dest('css/build'))
         .pipe(debug({title: 'dest'}))
-    // return gulp.src([ 'js/script.js'])
-    //     .pipe(watch('js/script.js'))
-    //     .pipe(debug({ title: 'src' }))
-    //     .pipe(uglify('production.min.js'))
-    //     .pipe(gulp.dest('js/build'))
-    //     .pipe(debug({ title: 'dest' }))
 });
 
-gulp.task('default', ['js', 'watch']);
+gulp.task('default', ['js', 'watch', 'sass']);

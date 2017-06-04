@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+         crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <title>HW7-8--Form</title>
+    </head>
+    <body>
+        <div class="main">
+            <h1>LAB1 - LOGIN FORM</h1>
+            <form class="main-form" action="index.html" method="get">
+                <span>User Name </span><input type="text" id="input-1" class="inputs"><br>
+                <span>Password </span><input type="password" id="input-2" class="inputs"><br>
+                <span>Repeat Password </span><input type="password" id="input-3" class="inputs"><br>
+                <span>E-MAIL </span><input type="email" id="input-4" class="inputs"><br>
+                <span>phone number </span><input type="text" id="input-5" class="inputs"><br>
+
+                <span>Choose ur sex</span><label for="checker">Male</label><input type="radio" id="checker" name="sex" value="male">
+                <label for="checker">Female</label><input type="radio" id="checker" value="female" name="sex">
+
+                <select class="select-prof" name="prof-select">
+                    <option value="" disabled="">select ur spec</option>
+                    <option value="">front-end dev</option>
+                    <option value="">C# dev</option>
+                    <option value="">Java dev</option>
+                    <option value="">Cleaner</option>
+                    <option value="">Solution Architect</option>
+                </select>
+
+                <div id="advice-1">Please enter your username here</div>
+                <div id="advice-2">Please enter your password here</div>
+                <div id="advice-3">Confirm your password here</div>
+
+                <input type="submit" id="submitButt" value="Submit">
+            </form>
+
+        </div>
+    </body>
+</html>
