@@ -1,0 +1,116 @@
+@import reset
+$prime-clr:    #ffc
+
+body
+    background: url("../../img/bg.jpg")
+    background-size: cover
+
+.todo
+    position: relative
+    width: 510px
+    height: 500px
+    margin: 40px auto
+    padding: 10px
+    border: 5px solid $prime-clr
+    border-radius: 30px
+    background: #998d72
+    opacity: .8
+    transition: .2s
+    font-family: "Segoe Script"
+
+.todo__today
+    padding-top: 20px
+    padding-bottom: 7px
+    font-size: 32px
+    border-bottom: 3px solid $prime-clr
+    text-align: center
+    color: #fff
+    font-weight: lighter
+
+#sortButt
+    display: block
+    position: absolute
+    width: 30px
+    height: 30px
+    top: 88px
+    left: 21px
+    img
+        width: 30px
+        height: 30px
+        margin-left: -8px
+        margin-top: -3px
+
+.todo__item-list
+    width: 515px
+    height: 318px
+    margin-top: 10%
+    padding-left: 10px
+    overflow-y: auto
+    overflow-x: hidden
+    li
+        height: 40px
+        position: relative
+    .edit
+        width: 82%
+        height: 25px
+        background-color: rgba($prime-clr, 0.5)
+        text-indent: 10px
+        color: #fff
+        font-size: 20px
+        font-family: "Segoe UI"
+
+.done-click
+    text-decoration: line-through
+    opacity: .5
+    transition: .3s
+
+
+.todo__item--delete img
+    position: absolute
+    width: 30px
+    height: 30px
+    margin-left: 40px
+
+.todo__item--done img
+    position: absolute
+    width: 30px
+    height: 30px
+    margin-left: 5px
+
+.todo__controlls
+    width: 532px
+    position: absolute
+    left: 0px
+    bottom: -2px
+    opacity: .5
+    transition: .2s
+    &:hover
+        opacity: 1
+
+.todo__controlls__input
+    width: 428px
+    height: 50px
+    text-indent: 10px
+    font-size: 20px
+    font-style: italic
+    border-top-left-radius: 15px
+    border-bottom-left-radius: 20px
+    &:focus
+        outline: none
+    font-family: "Segoe UI"
+    border: 0
+
+.todo__controlls__butt
+    width: 104px
+    height: 54px
+    margin-left: -7px
+    background-color: rgba($prime-clr, 0.5)
+    cursor: pointer
+    color: #fff
+    border-top-right-radius: 15px
+    border-bottom-right-radius: 20px
+    border: 0
+    font-size: 18px
+    &:focus
+        outline: none
+    font-family: "Segoe UI"
