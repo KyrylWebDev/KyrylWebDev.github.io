@@ -5,7 +5,8 @@
                 self.elements = {
                     input: $('.todo__controlls__input'),
                     addButt: $('.todo__controlls__butt'),
-                    listCont: $('.todo__item-list')
+                    listCont: $('.todo__item-list'),
+                    sortButton: $('#sortButt')
                 };
                 self.renderList(model.data);
             };
