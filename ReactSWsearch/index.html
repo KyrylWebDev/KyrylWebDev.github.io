@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/react@15/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.js"></script>
+        <title>React.js Lessons</title>
+    </head>
+
+    <style media="screen">
+        .contacts {
+        width: 300px;
+        margin: 0 auto;
+        }
+
+        .search-field {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        }
+
+        .contacts-list {
+        padding: 0;
+        width: 100%;
+        }
+
+        .contact {
+        display: flex;
+        align-items: center;
+        font-family: sans-serif;
+        width: 100%;
+        padding: 5px;
+        border-bottom: 3px dotted #6a6;
+        }
+
+        .contact-image {
+        border-radius: 50%;
+        margin: 5px;
+        }
+
+        .contact-name {
+        font-size: 20px;
+        font-weight: bold;
+        }
+
+        .contact-number {
+        font-size: 18px;
+        color: grey;
+        }
+    </style>
+
+    <body>
+
+        <section id="content"></section>
+
+    </body>
+
+    <script type="text/babel">
+
+        var CONTACTS = [
+            {
+                id: 1,
+                name: 'Darth Vader',
+                phoneNumber: '+2543215743',
+                image: 'img/vader.jpg'
+            }, {
+                id: 2,
+                name: 'Chewbakka',
+                phoneNumber: '+2877321543',
+                image: 'img/cheewy.jpg'
+            }, {
+                id: 3,
+                name: 'Luke Skywalker',
+                phoneNumber: '+2454321543',
+                image: 'img/luke.jpg'
+            }, {
+                id: 4,
+                name: 'Django Fett',
+                phoneNumber: '+2000321543',
+                image: 'img/fett.jpg'
+            }, {
+                id: 5,
+                name: 'Obi Wan Kenobi',
+                phoneNumber: '+2543231543',
+                image: 'img/obi.jpg'
+            }, {
+                id: 6,
+                name: 'Leia Organa',
+                phoneNumber: '+2543876543',
+                image: 'img/leia.jpg'
+            }
+        ];
+
+        var Contact = React.createClass({
+            render: function () {
+                return (
+                    <li className="contact">
+                        <img className="contact-image" src = { this.props.image } width="60px" height="60px" />
+                        <div className="contact-info">
+                            <div className="contact-name" > { this.props.name } </div>
+                            <div className="contact-number" > { this.props.phoneNumber } </div>
+                        </div>
+                    </li>
+                );
+            }
+        });
+
+        var ContactList = React.createClass({
+            getInitialState: function () {
+                return {
+                    displayedContacts: CONTACTS
+                };
+            },
+
+            handleSearch: function (event) {
+                var searchQuery = event.target.value.toLowerCase();
+                var displayedContacts = CONTACTS.filter(function (el) {
+                    var searchValue = el.name.toLowerCase();
+                    return searchValue.indexOf(searchQuery) !== -1;
+                });
+
+                this.setState({
+                    displayedContacts: displayedContacts
+                });
+            },
+
+            render: function () {
+                return (
+                    <div className="contacts">
+                        <input type="text" className="search-field" onChange={ this.handleSearch } />
+                        <ul className="contacts-list">
+                            {
+                                this.state.displayedContacts.map(function (el) {
+                                    return <Contact
+                                        key = { el.id }
+                                        name = { el.name }
+                                        phoneNumber = { el.phoneNumber }
+                                        image = { el.image }
+                                    />;
+                                })
+                            }
+                        </ul>
+                    </div>
+                );
+            }
+        });
+
+        ReactDOM.render (
+            <ContactList />,
+            document.getElementById("content")
+        );
+
+    </script>
+
+</html>

@@ -7,7 +7,7 @@ html,body {
 	margin: 0;
 	padding: 0;
 }
-	
+
 .application__name h3{
 	color: #fff;
 	position: absolute;
@@ -24,7 +24,7 @@ html,body {
 	top: 85px;
 	left: 20px;
 	width: 320px;
-	height: 410px;
+	height: 440px;
 	background: #ccf;
 	opacity: .6;
 	z-index: 10000;
@@ -38,10 +38,9 @@ html,body {
 }
 
 #user-inputs input {
-	display: block;
 	width: 250px;
 	height: 40px;
-	margin: 10px auto;
+	margin: 15px 0 0 35px;
 	line-height: 40px;
 	font-size: 24px;
 	text-indent: 10px;
@@ -57,10 +56,31 @@ html,body {
 	margin-right: 20px;
 	display: inline-block;
 	line-height: 25px;
+    margin-left: 3px;
 }
 
 #user-inputs label {
 	line-height: 25px;
+}
+
+#pilot-rank {
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-left: 35px;
+    font-size: 22px;
+	text-indent: 10px;
+    margin-top: 20px;
+}
+
+#airplaine-class {
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-left: 35px;
+    margin-top: 10px;
+    font-size: 22px;
+	text-indent: 10px;
 }
 
 #send-data {
@@ -75,7 +95,7 @@ html,body {
 	top: 60px;
 	right: 20px;
 	width: 350px;
-	height: 500px;
+	height: 530px;
 	background: #ccf;
 	opacity: .8;
 	z-index: 10000;
@@ -99,7 +119,7 @@ html,body {
 	height: 25px;
 	margin: 2px auto;
 	line-height: 40px;
-	font-size: 18px;
+	font-size: 16px;
 	text-indent: 10px;
 }
 
@@ -111,7 +131,7 @@ html,body {
 
 #weather {
 	width: 300px;
-	height: 70px;
+	height: 50px;
 	margin-left: 25px;
 	resize: none;
 }
@@ -119,16 +139,20 @@ html,body {
 #system-result {
 	text-transform: uppercase;
 	display: block;
-	width: 250px;
+	width: 285px;
 	margin: 10px auto;
 	position: relative;
-	bottom: 220px;
+	bottom: 215px;
 	right: -6px;
-	font-size: 24px;
+	font-size: 28px;
 	background: #9f9;
 	text-align: center;
 	font-weight: bold;
+}
 
+.req-star {
+    font-size: 28px;
+    color: #f00;
 }
 
 .application__author {
