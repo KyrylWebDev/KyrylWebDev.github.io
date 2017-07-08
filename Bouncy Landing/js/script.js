@@ -6,7 +6,8 @@ $(function () {
         $('body, html').animate( {
             scrollTop: top-70
         }, 500);
-    })
+    });
+
 
 
     var $brand1 = $('.brand-1');

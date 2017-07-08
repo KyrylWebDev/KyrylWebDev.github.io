@@ -22,6 +22,15 @@
     background-image: url("../img/bg-top.jpg");
 }
 
+.dark-overlay {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 718px;
+    background-color: #000;
+    opacity: .2;
+}
+
 .row {
     margin: 0;
 }
@@ -57,9 +66,12 @@
 }
 
 .top-menu a {
-    padding: 10px 20px;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 35px;
     font-size: 18px;
     color: #fff;
+    text-decoration: none;
 }
 
 .top-menu a:hover {
@@ -74,10 +86,14 @@
 }
 
 #page-1 section {
+    position: absolute;
     width: 650px;
     height: 300px;
     margin: auto;
     margin-top: 210px;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #page-1 section h1 {
@@ -99,11 +115,35 @@
     font-family: "Segoe UI"
 }
 
-#page-1 img {
+.arrow-down {
+    position: absolute;
     display: block;
-    width: 40px;
-    margin: 0 auto;
+    margin: 0;
+    bottom: 20px;
+    z-index: 3;
+    top: 620px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
 }
+
+.arrow-bg {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    z-index: 1;
+    top: 605px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+
+.arrow-bg:hover {
+    opacity: 1;
+    transition: .3s;
+}
+
 
 
                                     /* PAGE 2 */
@@ -140,9 +180,9 @@
     margin-top: -115px;
 }
 
-.readMore {
+.more {
     display: block;
-    width: 110px;
+    width: 130px;
     padding: 5px 10px;
     color: #000;
     text-align: center;
@@ -152,10 +192,11 @@
     text-decoration: none;
 }
 
-.readMore:hover {
+.more:hover {
     text-decoration: none;
     color: #fff;
-    background: #27c;
+    background: #17b494;
+    transition: .2s;
 }
 
 
@@ -304,6 +345,6 @@
     width: 100%;
     height: 120px;
     bottom: 1px;
-    background: red; 
+    background: red;
     /*background: linear-gradient(45deg, #383, #7b7, #7f7);*/
 }
