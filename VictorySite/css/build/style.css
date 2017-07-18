@@ -1,0 +1,673 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  /* font: inherit; */
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+#gallery {
+  width: 60vw;
+  margin-left: 1vw; }
+
+#thumbs {
+  width: 90vw;
+  height: 230px;
+  padding-top: 10px;
+  overflow-x: auto; }
+
+#thumbs img, #largeImage {
+  border: 1px solid gray;
+  padding: 4px;
+  background-color: white;
+  cursor: pointer; }
+
+#thumbs img {
+  margin-right: 6px;
+  width: 100px; }
+
+#largeImage {
+  width: 48vw;
+  height: 48vw; }
+
+#description {
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+  width: 550px;
+  margin: 5px; }
+
+#panel {
+  position: relative; }
+
+h1, h2 {
+  font-size: 42px;
+  color: #333;
+  text-align: center; }
+
+h2 {
+  font-size: 20px;
+  line-height: 30px; }
+
+h2 a {
+  background-color: #F5FF4C;
+  color: #333;
+  text-decoration: none;
+  padding: 5px; }
+
+h2 a:hover {
+  background-color: #d5dd42; }
+
+.main {
+  width: 100vw;
+  height: auto;
+  margin: auto;
+  background: #fff;
+  font-family: "Segoe UI"; }
+
+.contacts {
+  width: 100%;
+  height: 115px;
+  background: #fff;
+  border-bottom: 3px solid #000; }
+  .contacts .cont-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    padding-right: 4px;
+    padding-bottom: 3px; }
+  .contacts span {
+    display: block;
+    width: 230px;
+    height: 15px;
+    margin: auto;
+    padding-top: 10px;
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    line-height: 15px; }
+    .contacts span a {
+      color: #000;
+      text-decoration: none; }
+  .contacts .cont-mail {
+    width: 150px;
+    margin-top: -15px; }
+    .contacts .cont-mail:hover {
+      text-shadow: 1px 1px 10px #555; }
+
+.contacts__social {
+  display: block;
+  width: 265px;
+  margin: 8px auto; }
+  .contacts__social a {
+    padding: 15px; }
+
+.social-icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px; }
+
+.soc-icon1 {
+  background: url("../../img/insta.png"); }
+  .soc-icon1:hover {
+    background: url("../../img/insta-hov.png");
+    background-size: cover;
+    transition: .5s; }
+
+.soc-icon2 {
+  background: url("../../img/fb.png"); }
+  .soc-icon2:hover {
+    background: url("../../img/fb-hov.png");
+    transition: .5s; }
+
+.soc-icon3 {
+  background: url("../../img/vk.png"); }
+  .soc-icon3:hover {
+    background: url("../../img/vk-hov.png");
+    transition: .5s; }
+
+.soc-icon4 {
+  background: url("../../img/you.png"); }
+  .soc-icon4:hover {
+    background: url("../../img/you-hov.png");
+    transition: .5s; }
+
+.top {
+  background: #333; }
+
+.logo {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-bottom: 10px;
+  margin: 10px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px #030; }
+
+.site-name {
+  width: 240px;
+  text-align: center;
+  float: left;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: "Segoe Script";
+  font-weight: lighter;
+  cursor: default; }
+  .site-name:hover {
+    color: #595;
+    transition: .5s; }
+  .site-name span {
+    font-size: 28px;
+    font-style: oblique;
+    color: #7a7; }
+
+.wide-menu {
+  display: none;
+  float: left;
+  width: 800px;
+  margin-left: 90px;
+  margin-top: 15px; }
+  .wide-menu li {
+    display: inline-block;
+    line-height: 60px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "Segoe UI";
+    border-bottom: 2px solid #fff; }
+    .wide-menu li:hover {
+      transition: .5s;
+      border-bottom: 2px solid #595;
+      color: #595; }
+  .wide-menu a {
+    text-decoration: none;
+    color: #000; }
+
+#menu-butt {
+  width: 60px;
+  position: absolute;
+  vertical-align: top;
+  margin-top: 25px;
+  right: 2vw;
+  cursor: pointer; }
+
+.drop-menu {
+  display: none;
+  width: 300px;
+  position: absolute;
+  z-index: 4;
+  top: 146px;
+  right: 75px;
+  background: rgba(51, 153, 51, 0.8); }
+  .drop-menu li {
+    line-height: 42px;
+    text-align: right;
+    padding-right: 12px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: Ubuntu;
+    border-bottom: 3px solid #fff; }
+    .drop-menu li:hover {
+      transition: .5s;
+      background: rgba(51, 68, 51, 0.7);
+      color: #fff; }
+  .drop-menu a {
+    text-decoration: none;
+    color: #fff; }
+
+/* ---------------ТОВАРИ */
+#stuffs {
+  clear: both;
+  width: 83.5vw;
+  margin: auto;
+  padding-top: 100px; }
+  #stuffs h1 {
+    width: 292px;
+    margin: 15px auto;
+    font-size: 42px;
+    font-family: "Segoe UI";
+    font-weight: lighter; }
+  #stuffs .stuff {
+    width: 40vw;
+    height: 40vw;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px; }
+    #stuffs .stuff:hover {
+      transform: scale(1.09) rotate(4deg);
+      transition: .5s;
+      box-shadow: 3px 3px 10px 4px #7b7;
+      cursor: pointer; }
+    #stuffs .stuff img {
+      width: 100%;
+      height: 100%; }
+  #stuffs .stuff-name {
+    font-size: 4vw;
+    display: block;
+    margin-top: -352px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 10px #fff;
+    opacity: 0;
+    transition: .5s; }
+    #stuffs .stuff-name:hover {
+      opacity: 1;
+      transition: .5s; }
+
+.clear {
+  clear: both; }
+
+#about-us {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+  margin-top: 100px;
+  text-align: justify;
+  clear: both; }
+  #about-us h1 {
+    width: 220px;
+    margin: 25px auto;
+    font-size: 42px;
+    font-family: "Segoe UI";
+    font-weight: lighter; }
+  #about-us img {
+    width: 200px;
+    padding: 5px;
+    float: left;
+    border: 1px solid #fff;
+    border-radius: 150px; }
+  #about-us p {
+    width: 60%;
+    margin: auto;
+    padding-top: 20px;
+    margin-left: 220px;
+    font-size: 24px;
+    font-style: italic;
+    color: #070; }
+
+#pay-delivery {
+  width: 80%;
+  margin: auto;
+  margin-top: 250px;
+  text-align: center; }
+  #pay-delivery h1 {
+    width: 350px;
+    margin: 20px auto;
+    font-size: 42px;
+    font-family: "Segoe UI";
+    font-weight: lighter; }
+  #pay-delivery .delivery-info {
+    font-size: 22px;
+    color: #fa6; }
+  #pay-delivery .delivery-list {
+    font-size: 20px;
+    line-height: 30px;
+    list-style: none;
+    list-style-position: inside; }
+
+footer {
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+  border-top: 3px solid #000;
+  background: #333; }
+
+.wide-menu-footer {
+  margin-left: 30px;
+  margin-top: 30px;
+  padding-bottom: 20px; }
+  .wide-menu-footer li {
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: Ubuntu;
+    border-bottom: 2px solid #fff; }
+    .wide-menu-footer li:hover {
+      transition: .5s;
+      border-bottom: 2px solid #595;
+      color: #595; }
+  .wide-menu-footer a {
+    text-decoration: none;
+    color: #fff; }
+
+.contacts__social-footer {
+  float: right;
+  margin-top: -70px;
+  margin-right: 150px; }
+  .contacts__social-footer a {
+    padding-right: 10px; }
+  .contacts__social-footer li {
+    list-style: none;
+    line-height: 20px;
+    padding-bottom: 10px;
+    margin-left: -20px;
+    color: #fff; }
+    .contacts__social-footer li img {
+      width: 15px; }
+
+.copyright {
+  text-align: center;
+  margin: auto;
+  font-size: 14px;
+  padding: 8px;
+  color: #55f; }
+  .copyright span {
+    padding-left: 5px;
+    font-style: italic;
+    color: #ff5; }
+    .copyright span a {
+      color: #ff0; }
+
+/* ------------ STYLES FOR STUFF PAGES -----------*/
+.stuff-pict {
+  margin-top: 80px;
+  font-family: "Segoe UI"; }
+  .stuff-pict h1 {
+    font-weight: lighter;
+    font-size: 48px;
+    margin: 10px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 10px; }
+
+.stuff-info {
+  horizontal-scroll: none;
+  width: 320px;
+  height: 380px;
+  position: absolute;
+  top: 482px;
+  left: 51vw;
+  overflow: auto;
+  border: 3px solid #8a8;
+  overflow-y: auto;
+  text-align: justify; }
+  .stuff-info p {
+    font-size: 16px;
+    padding: 4px; }
+  .stuff-info #stuff-list {
+    padding-top: 10px;
+    padding-left: 30px;
+    list-style-type: disc; }
+    .stuff-info #stuff-list li {
+      line-height: 25px;
+      border-bottom: 1px solid #aaa; }
+  .stuff-info .stuff-price {
+    float: right;
+    padding-right: 40px;
+    font-size: 22px;
+    color: #2a2; }
+  .stuff-info #buy-butt {
+    width: 150px;
+    height: 80px;
+    background-image: linear-gradient(45deg, #1a1, #6d6, #ccc);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "Segoe UI";
+    border: 2px solid #7a7;
+    cursor: pointer;
+    margin-top: 75px;
+    margin-left: 47% !important;
+    transform: translateX(-50%); }
+    .stuff-info #buy-butt a {
+      text-decoration: none;
+      color: #fff; }
+    .stuff-info #buy-butt:focus {
+      outline: none; }
+    .stuff-info #buy-butt:hover {
+      box-shadow: 1px 1px 10px 4px #6d6; }
+
+@media only screen and (min-width: 800px) {
+  .main {
+    width: 98.7vw; }
+  .logo {
+    width: 180px;
+    height: 180px;
+    margin-left: 150px;
+    margin-top: 45px; }
+  .site-name {
+    width: 755px;
+    font-size: 55px;
+    margin-top: 85px;
+    margin-left: 20px; }
+  .contacts {
+    height: 70px; }
+  .contacts__phones {
+    float: left;
+    margin-left: 90px; }
+  .contacts__social {
+    float: right;
+    margin-right: 135px;
+    margin-top: 3px; }
+    .contacts__social span {
+      font-size: 16px; }
+  .wide-menu {
+    display: inline-block; }
+  #menu-butt {
+    display: none; }
+  .drop-menu {
+    display: none; }
+  #about-us {
+    width: 70vw; }
+    #about-us img {
+      width: 300px;
+      float: left;
+      border: 1px solid #fff;
+      border-radius: 150px; }
+    #about-us p {
+      width: 65%;
+      margin-left: 350px;
+      font-size: 24px;
+      color: #070;
+      line-height: 35px; }
+      #about-us p span {
+        color: #0a0; }
+  #stuffs .stuff {
+    width: 27vw;
+    height: 27vw;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px; }
+    #stuffs .stuff:hover {
+      transform: scale(1.09) rotate(5deg);
+      transition: .3s;
+      box-shadow: 3px 3px 10px 4px #7b7;
+      cursor: pointer; }
+    #stuffs .stuff img {
+      width: 100%;
+      height: 100%; }
+  .stuff-name {
+    font-size: 4vw;
+    display: block;
+    margin-top: -352px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 10px #fff;
+    opacity: 0;
+    transition: .5s; }
+    .stuff-name:hover {
+      opacity: 1;
+      transition: .5s; }
+  .wide-menu-footer {
+    margin-left: 135px; }
+  .stuff-info {
+    display: block;
+    width: 50vw;
+    height: 48vw;
+    position: absolute;
+    top: 578px;
+    left: 51vw;
+    overflow: auto; }
+    .stuff-info p {
+      font-size: 18px;
+      padding: 10px; }
+    .stuff-info #stuff-list {
+      padding-top: 10px;
+      padding-left: 30px;
+      list-style-type: disc; }
+      .stuff-info #stuff-list li {
+        line-height: 30px; }
+  #pay-delivery {
+    margin-top: 250px; }
+  #buy-butt {
+    width: 300px !important; } }
+
+@media only screen and (max-width: 600px) {
+  #stuffs .stuff-name {
+    opacity: 1; }
+  #largeImage {
+    margin-left: 65px; }
+  .site-name {
+    display: none; }
+  #stuffs .stuff {
+    width: 80vw;
+    height: 80vw; }
+  #about-us p {
+    width: 80%;
+    font-size: 18px;
+    display: block;
+    margin: auto;
+    text-align: center; }
+  #about-us img {
+    width: 240px;
+    margin: 10px auto;
+    margin-left: 10vw; }
+  #pay-delivery {
+    margin-top: 300px; }
+    #pay-delivery h1 {
+      width: 200px; }
+    #pay-delivery .delivery-info {
+      font-size: 22px; }
+      #pay-delivery .delivery-info ul li {
+        line-height: 30px; }
+  .contacts__social {
+    width: 185px; }
+    .contacts__social a {
+      padding: 5px; }
+  #stuffs h1 {
+    width: 205px; }
+  .stuff-info {
+    display: block;
+    width: 94vw;
+    height: 275px;
+    margin: auto;
+    overflow: auto;
+    margin-top: 100px;
+    top: 925px;
+    right: 10px;
+    background: #595;
+    color: #fff; }
+  #gallery {
+    width: 80vw;
+    margin-left: 5px; }
+  footer {
+    margin-top: 350px; } }
+
+@media only screen and (max-width: 1100px) {
+  .site-name {
+    width: 50%;
+    font-size: 34px; }
+  #stuffs .stuff-name {
+    width: 210px;
+    text-align: center;
+    font-size: 39px;
+    margin-top: -262px;
+    padding-top: 97px;
+    padding-left: 30px;
+    padding-right: 20px;
+    overflow: auto; }
+  .contacts__social-footer {
+    width: 235px;
+    float: none;
+    margin: auto; } }
+
+@media only screen and (max-width: 400px) {
+  .stuff-info {
+    display: block;
+    top: 925px;
+    right: 10px; }
+  footer {
+    margin-top: 350px; }
+  #about-us img {
+    width: 220px;
+    float: none;
+    margin: 10px auto;
+    margin-left: 8vw; }
+  #about-us p {
+    font-size: 17px;
+    width: 85%;
+    margin: auto;
+    color: #070; }
+  #pay-delivery {
+    margin-top: 530px; } }
+
+@media only screen and (min-width: 1100px) {
+  .stuff-info {
+    width: 43vw;
+    height: 48vw;
+    top: 535px;
+    right: 10px; } }
+
+#ho_adv {
+  display: none !important; }

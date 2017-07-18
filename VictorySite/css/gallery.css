@@ -1,0 +1,20 @@
+#gallery {
+    width: 60vw;
+    margin-left: 1vw;
+}
+
+#thumbs { width: 90vw; height: 230px; padding-top: 10px; overflow-x: auto; }
+#thumbs img, #largeImage { border: 1px solid gray; padding: 4px; background-color: white; cursor: pointer;  }
+#thumbs img { margin-right: 6px; width: 100px; }
+#largeImage  {
+    width: 48vw;
+    height: 48vw;
+}
+
+#description { background: black; color: white; position: absolute; bottom: 0; padding: 10px 20px; width: 550px; margin: 5px; }
+#panel { position: relative; }
+
+h1, h2 { font-size: 42px; color: #333;  text-align: center;  }
+h2 { font-size: 20px; line-height: 30px; }
+h2 a { background-color: #F5FF4C; color: #333; text-decoration: none; padding: 5px;}
+h2 a:hover { background-color: #d5dd42; }
